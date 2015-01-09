@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html class="fsvs" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="images" />
+        <link rel="stylesheet" href="fonts" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+        <link rel="stylesheet" type="text/css" href="css/example3.css">
+
+        <!--[if IE]>
+            <script type="text/javascript">
+               var console = { log: function() {} };
+            </script>
+        <![endif]-->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    // sectionsColor: ['#ffffff', '#bd1951', '#7BAABE', 'whitesmoke', '#ccddff'],
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage','lastPage'],
+                    menu: '#menu',
+                    css3: false
+                });
+
+                $('#showExamples').click(function(e){
+                    e.stopPropagation();
+                    e.preventDefault();
+                    $('#examplesList').toggle();
+                });
+
+                $('html').click(function(){
+                    $('#examplesList').hide();
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            document.getElementById("sectionsColor").style.opacity=0.2;  
+        </script>
+    </head>
+
+    <body>
+        <!-- <a href="https://github.com/alvarotrigo/fullPage.js"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alvarotrigo.com/fullPage/" data-text="Great plugin to create fullscreen scrolling websites: http://alvarotrigo.com/fullPage/">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+ -->
+<!-- <ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
+</ul> -->
+
+<div id="fullpage">
+    <div class="section active" id="section0">
+        <section id="section-one">
+            <div class="container">
+                <div class="main-title-box">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="images/logo.png">
+                        </div>
+                        <div class="col-md-9">
+                            <h1>WE BUILD<br>
+                            <span>WEBSITES</span><br>
+                            THAT BUILD<br>
+                            <span>BUSINESS</span></h1>
+                        </div>
+                    </div>    
+                </div>
+                <div class="orange-btn">
+                    <a class="btn" href="#" role="button">Let’s talk about it.</a>
+                </div>
+            </div>
+            <div class="white-menu-block">
+                <div class="container">
+                    <div clasd="row">
+                        <div class="col-md-9 col-md-offset-3">
+                            <ul id="menu" class="nav">
+                                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">About lda</a></li>
+                                <li data-menuanchor="secondPage"><a href="#secondPage">Branding</a></li>
+                                <li data-menuanchor="3rdPage"><a href="#3rdPage">Web development</a></li>
+                                <li data-menuanchor="4thpage"><a href="#4thpage">Online marketing</a></li>
+                                <li data-menuanchor="5rdPage"><a href="#5rdPage">Graphic design</a></li>
+                                <li data-menuanchor="6thpage"><a href="#6thpage">Contact details</a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>       
+        </section>
+    </div>
+    <div class="section" id="section1">
+        <section id="section-two">
+            <div class="branding-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="images/logo-small.png">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="popup-menu pull-right">
+                                <button type="button" class="btn">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h2>Branding</h2>
+                            <h3>If you chase two rabbits, you will not catch either one.</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Here at Luxembourg Design we understand that your website should be everything you want it to be. That’s why every website design project starts with a frank discussion about what business objective you want to achieve. You may want to build brand awareness, generate online sales, acquire new customers or work towards another specific and measurable objective.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>We then apply our business and technical expertise to design a beautiful custom made website that works for you. </p>
+
+                                    <p>Our websites come with the latest technologies as standard. They adapt to mobile and tablet devices to satisfy an ever more mobile audience. They work well with social media and search engines. They run on reliable and extremely fast servers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orange-btn">
+                        <a class="btn" href="#" role="button">Let’s talk about it.</a>
+                    </div>
+                    <div class="read-more">
+                        <a href="#"><img src="images/read-more-btn.png"><br>scroll down to read more</a>
+                    </div>
+                </div>   
+            </div>
+        </section>
+    </div>
+    <div class="section" id="section2">
+        <section id="section-tree">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/logo-small.png">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="popup-menu pull-right">
+                            <button type="button" class="btn">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2>Web design</h2>
+                        <h3>Simplicity and complexity need each other.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Here at Luxembourg Design we understand that your website should be everything you want it to be. That’s why every website design project starts with a frank discussion about what business objective you want to achieve. You may want to build brand awareness, generate online sales, acquire new customers or work towards another specific and measurable objective.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>We then apply our business and technical expertise to design a beautiful custom made website that works for you. </p>
+
+                                <p>Our websites come with the latest technologies as standard. They adapt to mobile and tablet devices to satisfy an ever more mobile audience. They work well with social media and search engines. They run on reliable and extremely fast servers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orange-btn">
+                    <a class="btn" href="#" role="button">Let’s talk about it.</a>
+                </div>
+                <div class="read-more">
+                    <a href="#"><img src="images/read-more-btn.png"><br>scroll down to read more</a>
+                </div>
+            </div>   
+        </section>
+    </div>
+    <div class="section" id="section3">
+        <section id="section-four">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/logo-small.png">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="popup-menu pull-right">
+                            <button type="button" class="btn">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2>Online marketing</h2>
+                        <h3>All roads lead to Rome. Be Rome.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Here at Luxembourg Design we understand that your website should be everything you want it to be. That’s why every website design project starts with a frank discussion about what business objective you want to achieve. You may want to build brand awareness, generate online sales, acquire new customers or work towards another specific and measurable objective.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>We then apply our business and technical expertise to design a beautiful custom made website that works for you. </p>
+
+                                <p>Our websites come with the latest technologies as standard. They adapt to mobile and tablet devices to satisfy an ever more mobile audience. They work well with social media and search engines. They run on reliable and extremely fast servers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orange-btn">
+                    <a class="btn" href="#" role="button">Let’s talk about it.</a>
+                </div>
+                <div class="read-more">
+                    <a href="#"><img src="images/read-more-btn.png"><br>scroll down to read more</a>
+                </div>
+            </div>   
+        </section>
+    </div>
+</div>
+
+<div id="infoMenu">
+    <ul>
+        <li><a href="https://github.com/alvarotrigo/fullPage.js/archive/master.zip">Download</a></li>
+        <li>
+            <a href="#" id="showExamples">Examples</a>
+            <div id="examplesList">
+                <div class="column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="examples/navigationV.html">Vertical navigation dots</a></li>
+                        <li><a href="examples/navigationH.html">Horizontal navigation dots</a></li>
+                        <li><a href="examples/normalScroll.html">Normal scrolling</a></li>
+                        <li><a href="examples/continuous.html">Continuous vertical</a></li>
+                        <li><a href="examples/noAnchor.html">Without anchor links (same URL)</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Design</h3>
+                    <ul>
+                        <li><a href="examples/backgrounds.html">Full backgrounds</a></li>
+                        <li><a href="examples/videoBackground.html">Full background videos</a></li>
+                        <li><a href="examples/gradientBackgrounds.html">Gradient backgrounds</a></li>
+                        <li><a href="examples/scrolling.html">Scrolling inside sections and slides</a></li>
+                        <li><a href="examples/fixedHeaders.html">Adding fixed header and footer</a></li>
+                        <li><a href="examples/oneSection.html">One single section</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Callbacks</h3>
+                    <ul>
+                        <li><a href="examples/apple.html">Animations on scrolling</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </li>
+        <li><a href="https://github.com/alvarotrigo/fullPage.js#fullpagejs">Documentation</a></li>
+        <li><a href="http://alvarotrigo.com/#contact-page">Contact</a></li>
+    </ul>
+</div>
+    
+        <!-- <section id="section-one">
+            <div class="home-block">
+                <div class="container">
+                    <div class="main-title-box">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/logo.png">
+                            </div>
+                            <div class="col-md-9">
+                                <h1>WE BUILD<br>
+                                <span>WEBSITES</span><br>
+                                THAT BUILD<br>
+                                <span>BUSINESS</span></h1>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="orange-btn">
+                        <a class="btn" href="#" role="button">Let’s talk about it.</a>
+                    </div>
+                </div>
+                <div class="white-menu-block">
+                    <div class="container">
+                        <div clasd="row">
+                            <div class="col-md-9 col-md-offset-3">
+                                <ul class="nav">
+                                    <li class="active"><a href="#">About lda</a></li>
+                                    <li><a href="#">Branding</a></li>
+                                    <li><a href="#">Web development</a></li>
+                                    <li><a href="#">Online marketing</a></li>
+                                    <li><a href="#">Graphic design</a></li>
+                                    <li><a href="#">Contact details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>        
+        </section>
+        <section id="section-two">
+            <div class="branding-block">
+                    
+            </div>
+        </section> -->
+
+    </body>
+</html>
